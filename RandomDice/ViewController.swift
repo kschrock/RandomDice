@@ -27,13 +27,11 @@ class ViewController: UIViewController {
 
     @IBAction func rollButton(_ sender: UIButton) {
         
-        random1 = Int.random(in: 0 ... 5)
+       let diceArray = [ #imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6") ]
         
-        print(random1)
+        diceIndex1.image = diceArray[Int.random(in: 0...5)]
         
-        random2 = Int.random(in: 0 ... 5)
-               
-        print(random2)
+         diceIndex2.image = diceArray[Int.random(in: 0...5)]
     }
     
 }
